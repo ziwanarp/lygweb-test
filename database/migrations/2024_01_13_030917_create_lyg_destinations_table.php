@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lygDestinations', function (Blueprint $table) {
+        Schema::create('lyg_Destinations', function (Blueprint $table) {
             $table->id();
             $table->string('DestinationCode',20);
             $table->string('DestinationName',50)->nullable();

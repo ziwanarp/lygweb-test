@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lygSewingOutput', function (Blueprint $table) {
+        Schema::create('lyg_Sewing_Outputs', function (Blueprint $table) {
             $table->id();
             $table->date('TrnDate');
             $table->string('OperatorName',50);

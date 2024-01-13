@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lygStyleSizes', function (Blueprint $table) {
+        Schema::create('lyg_Style_Sizes', function (Blueprint $table) {
             $table->id();
             $table->string('StyleCode',50);
             $table->integer('StyleSort');
