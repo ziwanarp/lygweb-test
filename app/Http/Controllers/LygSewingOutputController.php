@@ -21,7 +21,23 @@ class LygSewingOutputController extends Controller
 
    public function getDataByDateAndStyle(Request $request)
    {
-    $data = LygSewingOutput::where('TrnDate', $request->date)->where('StyleCode',$request->style)->get();
+      $distinctSizes = LygSewingOutput::distinct()->pluck('SizeName');
+      $selectStatements = [
+         'OperatorName',
+         'DestinationCode',
+      ];
+
+      foreach ($distinctSizes as $size) {
+         $selectStatements[] = LygSewingOutput::raw("SUM(CASE WHEN SizeName = '$size' THEN QtyOutput ELSE 0 END) as jumlah_size_$size");
+      }
+
+      $selectStatements[] = LygSewingOutput::raw('SUM(QtyOutput) as total_qty');
+
+      $data = LygSewingOutput::select($selectStatements)
+         ->where('TrnDate', $request->date)
+         ->where('StyleCode', $request->style)
+         ->groupBy('OperatorName', 'DestinationCode')
+         ->get();
     return response(json_decode($data),200);
    }
 }

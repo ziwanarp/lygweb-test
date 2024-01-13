@@ -209,7 +209,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\LygSewingOutput::factory()->create([
             'TrnDate' => '2024-01-02',
-            'OperatorName' => 'Afizza Shabira            ',
+            'OperatorName' => 'Afizza Shabira',
             'StyleCode' => 'BOSSE FANCY OH HOOD S.9',
             'SizeName' => 'XS',
             'DestinationCode' => 'HK',
@@ -217,7 +217,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\LygSewingOutput::factory()->create([
             'TrnDate' => '2024-01-02',
-            'OperatorName' => 'Afizza Shabira            ',
+            'OperatorName' => 'Afizza Shabira',
             'StyleCode' => 'BOSSE FANCY OH HOOD S.9',
             'SizeName' => 'S',
             'DestinationCode' => 'HK',
@@ -225,7 +225,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\LygSewingOutput::factory()->create([
             'TrnDate' => '2024-01-02',
-            'OperatorName' => 'Afizza Shabira            ',
+            'OperatorName' => 'Afizza Shabira',
             'StyleCode' => 'BOSSE FANCY OH HOOD S.9',
             'SizeName' => 'L',
             'DestinationCode' => 'HK',
@@ -233,7 +233,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\LygSewingOutput::factory()->create([
             'TrnDate' => '2024-01-02',
-            'OperatorName' => 'Afizza Shabira            ',
+            'OperatorName' => 'Afizza Shabira',
             'StyleCode' => 'BOSSE FANCY OH HOOD S.9',
             'SizeName' => 'XL',
             'DestinationCode' => 'HK',
@@ -241,7 +241,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\LygSewingOutput::factory()->create([
             'TrnDate' => '2024-01-02',
-            'OperatorName' => 'Afizza Shabira            ',
+            'OperatorName' => 'Afizza Shabira',
             'StyleCode' => 'BOSSE FANCY OH HOOD S.9',
             'SizeName' => 'XXL',
             'DestinationCode' => 'HK',
@@ -249,7 +249,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\LygSewingOutput::factory()->create([
             'TrnDate' => '2024-01-02',
-            'OperatorName' => 'Afizza Shabira            ',
+            'OperatorName' => 'Afizza Shabira',
             'StyleCode' => 'BOSSE FANCY OH HOOD S.9',
             'SizeName' => 'XS',
             'DestinationCode' => 'SG',
@@ -257,7 +257,7 @@ class DatabaseSeeder extends Seeder
         ]);
         \App\Models\LygSewingOutput::factory()->create([
             'TrnDate' => '2024-01-02',
-            'OperatorName' => 'Afizza Shabira            ',
+            'OperatorName' => 'Afizza Shabira',
             'StyleCode' => 'BOSSE FANCY OH HOOD S.9',
             'SizeName' => 'XL',
             'DestinationCode' => 'SG',
