@@ -20,3 +20,4 @@ use App\Http\Controllers\LygSewingOutputController;
 // });
 
 Route::POST('/getDataByDateAndStyle', [LygSewingOutputController::class, 'getDataByDateAndStyle']);
+Route::POST('/updateDataTable', [LygSewingOutputController::class, 'updateDataTable']);
