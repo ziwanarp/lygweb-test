@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\LygSewingOutput;
 use Illuminate\Http\Request;
-use Symfony\Component\VarDumper\VarDumper;
 
 class LygSewingOutputController extends Controller
 {
@@ -25,6 +24,8 @@ class LygSewingOutputController extends Controller
       $selectStatements = [
          'OperatorName',
          'DestinationCode',
+         'TrnDate',
+         'StyleCode', 
       ];
 
       foreach ($distinctSizes as $size) {
@@ -36,8 +37,36 @@ class LygSewingOutputController extends Controller
       $data = LygSewingOutput::select($selectStatements)
          ->where('TrnDate', $request->date)
          ->where('StyleCode', $request->style)
-         ->groupBy('OperatorName', 'DestinationCode')
+         ->groupBy('OperatorName', 'DestinationCode','TrnDate', 'StyleCode')
          ->get();
     return response(json_decode($data),200);
+   }
+
+   public function updateDataTable(Request $request)
+   {
+      $data = LygSewingOutput::where('OperatorName', $request->operatorName)
+                              ->where('DestinationCode', $request->destinationCode)
+                              ->where('SizeName', $request->size)
+                              ->where('TrnDate', $request->date)
+                              ->where('StyleCode', $request->styleCode)
+                              ->get();
+      if(count($data) > 0){
+         $data = $data[0];
+
+         $data->QtyOutput = $request->value;
+         $data->save();
+      } else {
+         $new_data = new LygSewingOutput([
+            'OperatorName' => $request->operatorName,
+            'StyleCode' => $request->styleCode,
+            'SizeName' => $request->size,
+            'TrnDate' => $request->date,
+            'DestinationCode' => $request->destinationCode,
+            'QtyOutput' => $request->value,
+        ]);
+        $new_data->save();
+
+      }
+      
    }
 }
