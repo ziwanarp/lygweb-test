@@ -177,17 +177,17 @@
                                                 var jumlah_size_146 = (typeof response[i].jumlah_size_146 == 'undefined') ? 0 : response[i].jumlah_size_146;
                                                 var jumlah_size_152 = (typeof response[i].jumlah_size_152 == 'undefined') ? 0 : response[i].jumlah_size_152;
 
-                                                html+=          "<td>"+jumlah_size_92+"</td>";
-                                                html+=          "<td>"+jumlah_size_98+"</td>";
-                                                html+=          "<td>"+jumlah_size_104+"</td>";
-                                                html+=          "<td>"+jumlah_size_110+"</td>";
-                                                html+=          "<td>"+jumlah_size_116+"</td>";
-                                                html+=          "<td>"+jumlah_size_122+"</td>";
-                                                html+=          "<td>"+jumlah_size_128+"</td>";
-                                                html+=          "<td>"+jumlah_size_134+"</td>";
-                                                html+=          "<td>"+jumlah_size_140+"</td>";
-                                                html+=          "<td>"+jumlah_size_146+"</td>";
-                                                html+=          "<td>"+jumlah_size_152+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"92\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_92+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"98\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_98+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"104\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_104+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"110\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_110+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"116\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_116+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"122\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_122+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"128\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_128+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"134\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_134+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"140\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_140+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"146\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_146+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"152\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_152+"</td>";
                                             } else {
 
                                                 var jumlah_size_XS = (typeof response[i].jumlah_size_XS == 'undefined') ? 0 : response[i].jumlah_size_XS;
@@ -197,12 +197,12 @@
                                                 var jumlah_size_XL = (typeof response[i].jumlah_size_XL == 'undefined') ? 0 : response[i].jumlah_size_XL;
                                                 var jumlah_size_XXL = (typeof response[i].jumlah_size_XXL == 'undefined') ? 0 : response[i].jumlah_size_XXL;
 
-                                                html+=          "<td onclick='editCell(this)''>"+jumlah_size_XS+"</td>";
-                                                html+=          "<td onclick='editCell(this)'>"+jumlah_size_S+"</td>";
-                                                html+=          "<td onclick='editCell(this)'>"+jumlah_size_M+"</td>";
-                                                html+=          "<td onclick='editCell(this)'>"+jumlah_size_L+"</td>";
-                                                html+=          "<td onclick='editCell(this)'>"+jumlah_size_XL+"</td>";
-                                                html+=          "<td onclick='editCell(this)'>"+jumlah_size_XXL+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"XS\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_XS+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"S\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_S+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"M\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_M+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"L\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_L+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"XL\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_XL+"</td>";
+                                                html+=          "<td onclick='editCell(this,\"XXL\",\""+response[i].OperatorName+"\",\""+response[i].DestinationCode+"\",\""+response[i].TrnDate+"\",\""+style+"\")'>"+jumlah_size_XXL+"</td>";
                                             }
                                             html+=          "<td>"+response[i].total_qty+"</td>";
                                             var DestinationCode = (response[i].DestinationCode == 'HK') ? 'HK (Hongkong)' : 'SG (Singapore)';
@@ -229,8 +229,18 @@
                     }
             }
 
-            function editCell(cell) {
-                
+            function editCell(cell, size, operatorName, destinationCode, TrnDate, StyleCode) {
+                console.log(cell);
+                console.log(size);
+                console.log(operatorName);
+                console.log(destinationCode);
+                console.log(TrnDate);
+                console.log(StyleCode);
+                var sz = size;
+                var dc = destinationCode;
+                var on = operatorName;
+                var dt = TrnDate;
+                var sc = StyleCode;
             // Check if the cell is already in edit mode
             if (cell.querySelector('input')) {
                 return;
@@ -263,37 +273,27 @@
                     console.log(input.value.trim());
                     cell.innerHTML = newValue;
 
-                    // Perform an AJAX request to update the data on the server
-                    // For simplicity, this example doesn't include the AJAX part
-
-                    // If you want to update the data on the server, make an AJAX request here
-                    // Example using fetch:
-                    // fetch('/update-data', {
-                    //     method: 'POST',
-                    //     headers: {
-                    //         'Content-Type': 'application/json',
-                    //     },
-                    //     body: JSON.stringify({
-                    //         id: cell.parentElement.cells[0].textContent,  // Assuming the ID is in the first cell
-                    //         column: cell.cellIndex,  // Column index of the edited cell
-                    //         value: newValue,
-                    //     }),
-                    // })
-                    // .then(response => response.json())
-                    // .then(data => {
-                    //     console.log('Data updated successfully:', data);
-                    // })
-                    // .catch(error => {
-                    //     console.error('Error updating data:', error);
-                    // });
+                    $.ajax({
+                            url: '/api/updateDataTable',
+                            type: 'POST',
+                            data: {
+                                size: sz,
+                                operatorName: on,
+                                destinationCode: dc,
+                                date: dt,
+                                value: newValue,
+                                styleCode: sc,
+                            },
+                            success: function(response) {
+                                console.log(response);
+                            },
+                            error: function(error) {
+                                console.error(error);
+                            }
+                    });
                 }
             });
 
-            // // Add an event listener to handle the blur event (when clicking outside the input)
-            // input.addEventListener('blur', function() {
-            //     // Restore the original value if the user exits without pressing Enter
-            //     cell.innerHTML = originalValue;
-            // });
         }
         </script>
 
